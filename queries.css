@@ -1,0 +1,23 @@
+/* mobile functionality */
+
+/* BELOW 900px (Iphone XR)  */
+@media (max-width: 80em) {
+  .game-setup {
+    width: 95%;
+  }
+  .start-data {
+    flex-direction: column;
+  }
+  .game-rules {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+  input {
+    padding: auto;
+    width: 100%;
+  }
+  .rule-item {
+    margin: 0 8rem;
+  }
+}

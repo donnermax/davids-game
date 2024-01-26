@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script type="svg" src="img/menu-open.svg"></script>
+    <script type="svg" src="img/menu-close.svg"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css">
+    <title>Game Scoreboard</title>
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <!-- SET UP -->
+    <section class="game-setup">
+      <div class="nav">
+        <h1 class="title">David's Game</h1>
+        <div class="icon menu-icon">
+          <img src="img/menu-close.svg" alt="" class="icon menu-close" />
+          <img src="img/menu-open.svg" alt="" class="icon menu-open hidden" />
+        </div>
+      </div>
+      <div class="start-data">
+        <label for="input"
+          ><p class="label-names">
+            Enter Player Names (separated by commas):
+          </p></label
+        >
+        <input
+          type="text"
+          class="input-names"
+          placeholder="David, Emma, Marg..."
+          required
+        />
+      </div>
+      <div class="cont-game-cntrl">
+        <button href="#current-game" class="game-cntrl start-game-button">
+          <a class="start-a" href="#current-game">Start Game</a>
+        </button>
+        <button class="game-cntrl restart-game restart-game-top hidden"><a class="start-a" href="#current-game">Restart Game</a></button>
+      </div>
+      <div class="game-rules">
+        <div class="rules rules-game">
+          <h2 class="rules-title">Rules of David's Game</h2>
+          <ol class="rule-list">
+            <li class="rule-item">Each player gets 5 cards</li>
+            <li class="rule-item">
+            A player can put down a minimum of 2 of a kind
+            </li>
+            <li class="rule-item">
+            A player can put down a run consisting of a min of 3 in a row (has to
+            be of the same suit and colour)
+            </li>
+            <li class="rule-item">
+            A player can call when they hold 5 points or less, everyone then places
+            their cards on the table and counts their points. 
+            </li>
+            <li class="rule-item">If a player has a
+              lower total points than that of the caller the caller is penalised
+              with 20 points added to their score called.</li>
+          </ol>
+      </div>
+      <div class="rules rules-points">
+        <h2 class="rules-title points-title">Points guide</h2>
+        <ol class="points-list">
+          <li class="card">&#x1F0DF <p class="card-text">20 Points</p></li>
+          <li class="card">&#x1F0AE <p class="card-text">13 Points</p></li>
+          <li class="card">&#x1F0AD <p class="card-text">12 Points</p></li>
+          <li class="card">&#x1F0AB <p class="card-text">11 Points</p></li>
+          <li class="card">&#x1F0A5 <p class="card-text">Numbered = face value</p></li>
+          <li class="card">&#x1F0A1 <p class="card-text">1 Point</p></li>
+        </ol>
+      </div>
+    </div>
+    
+
+    <section id="current-game" class="container current-game hidden">
+      <div class="active-players">
+        <div class="game-controls">
+          <h2 class="title-players">Active Players</h2>
+          <button class="act-cont restart-game">Restart Game</button>
+          <button class="act-cont  submit-scores-button">Submit Scores</button>
+        </div>
+        <h3 class="table-title">Scores</h3>
+        <table class="player-scores"></table>
+      </div>
+      
+    </section>
+
+    <!-- <section class="container loser-cont">
+      <div class="losers">
+        <h2>Losers</h2>
+        <ul class="loser-list"></ul>
+      </div>
+    </section> -->
+
+    
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

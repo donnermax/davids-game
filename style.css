@@ -1,0 +1,242 @@
+/* 
+
+--- TYPOGRAPHY ----
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Font weight:
+Default:400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+Line height:
+Default: 1
+small: 1.05
+Medium: 1.2
+paragraph default: 1.6
+
+-Letter Spacing
+-0.5px
+0.75
+
+COLORS:
+Primary: 
+Tints: 
+Shades:
+Accents:
+Greys: 
+#555
+#333
+
+
+--- 05 shadows ---
+
+--- 06 border-radius ---
+default: 9px
+
+---07 whitespace ---
+
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            
+*/
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.icon {
+  height: 15rem;
+  /* height: 30rem; */
+}
+.title {
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* GAME INPUT */
+
+.game-setup {
+  width: 80%;
+  height: 100vh;
+
+  margin: 0 auto 4.4rem auto;
+}
+.player-scores {
+  align-items: center;
+}
+.start-data {
+  padding: 3rem 5rem;
+  background-color: hwb(0 0% 0% / 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 15px;
+}
+.input-names {
+  padding: 1rem 50rem 1rem 1rem;
+  background-color: ##e6fcf5;
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+}
+
+.label-names {
+  font-size: 2rem;
+  color: white;
+}
+
+.game-cntrl {
+  margin-top: 2rem;
+  padding: 1rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #c5f6fa;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.start-a {
+  padding: 1rem 5rem;
+}
+
+.game-cntrl:hover {
+  background-color: red;
+  color: #1098ad;
+  box-shadow: 1px 2px 5px #1098ad;
+}
+.active-players {
+  padding: 3rem 5rem;
+  background-color: hwb(0 0% 0% / 0.8);
+  border-radius: 15px;
+}
+.active-players table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.active-players th,
+.active-players td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.loserList {
+  list-style: none;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+
+/* CURRENT GAME*/
+
+.container {
+  height: 90vh;
+
+  margin: 0 auto;
+  position: relative;
+}
+.loser-cont {
+  margin-top: 5rem;
+}
+.player-scores {
+  gap: 2rem;
+}
+.game-controls {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+.act-cont {
+  padding: 1rem 5rem;
+  background-color: black;
+  color: white;
+  border: none;
+
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.submit-scores-button {
+  margin-left: 2rem;
+}
+.restart-game:hover {
+  background-color: #c5f6fa;
+  color: black;
+  box-shadow: 1px 2px 5px red;
+  scale: 1.05;
+}
+.submit-scores-button:hover {
+  background-color: #c5f6fa;
+  color: black;
+  box-shadow: 1px 2px 5px red;
+  scale: 1.05;
+}
+
+/* RULES */
+.game-rules {
+  /* margin: 0 auto 4.4rem auto; */
+  margin-top: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 9.6rem;
+}
+.rules {
+  background-color: hwb(0 0% 0% / 0.75);
+  padding: 5rem 0 2rem 0;
+
+  border-radius: 2rem;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  color: #1098ad;
+  text-decoration: underline #1098ad;
+}
+.points-list {
+  list-style: none;
+}
+.card {
+  display: flex;
+
+  align-items: center;
+  font-size: 10rem;
+  gap: 5rem;
+  vertical-align: middle;
+}
+.rules-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.card-text {
+  font-size: 3rem;
+}
+.rule-item {
+  font-size: 3rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+.points-title {
+  margin-bottom: 4rem;
+}
